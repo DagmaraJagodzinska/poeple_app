@@ -1,0 +1,25 @@
+{
+  "name": "new_app_people",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DagmaraJagodzinska/poeple_app.git"
+  },
+  "author": "Dagmara Jagodzinska",
+  "license": "ISC",
+
+    "dependencies": {
+    "angular": "^v1.6.4",
+    "bootstrap": "^v3.3.7"
+  },
+  
+  "bugs": {
+    "url": "https://github.com/DagmaraJagodzinska/poeple_app/issues"
+  },
+  "homepage": "https://github.com/DagmaraJagodzinska/poeple_app#readme"
+}
