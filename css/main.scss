@@ -1,18 +1,55 @@
-.container {
+$white: #fff;
 
-    h2 {
-        color: blue;
-        font-size: 20px;
-    }
+$user-color: #05539C;
+$h2-color:  #069b9b;
+$add-button-bgcolor: #069b9b;
+
+// TYPOGRAPHY
+
+a:hover {
+    color: #05539C;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.add-button {
+    background-color: $add-button-bgcolor;
+    color: $white;
+    border-radius: 0;
+}
+
+.add-button:hover {
+    color: #9af4f0;
 }
 
 .sidebar, .main {
     margin-top: 100px;
 }
 
+// SEARCH PANEL 
+
 .navbar-form {
     padding: 0;
 }
+
+.search-panel {
+    background-color: #05539c;
+    height: 115px;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 0;
+}
+
+// MEDIA
 
 .people .media {
     display: flex;
@@ -22,6 +59,11 @@
 
     img {
         padding-right: 20px;
+        height: 70px;
+    }
+
+    .media-about {
+        width: 80%;
     }
 }
 
@@ -29,10 +71,10 @@
     button {
         margin-right: 10px;
     }
+
+    h5 {
+        text-transform: uppercase;
+        color: $user-color;
+    }
 }
 
-.pagination{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}

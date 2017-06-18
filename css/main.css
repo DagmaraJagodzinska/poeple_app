@@ -1,12 +1,35 @@
-.container h2 {
-  color: blue;
-  font-size: 20px; }
+a:hover {
+  color: #05539C;
+  cursor: pointer;
+  text-decoration: none; }
+
+h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1rem; }
+
+.add-button {
+  background-color: #069b9b;
+  color: #fff;
+  border-radius: 0; }
+
+.add-button:hover {
+  color: #9af4f0; }
 
 .sidebar, .main {
   margin-top: 100px; }
 
 .navbar-form {
   padding: 0; }
+
+.search-panel {
+  background-color: #05539c;
+  height: 115px; }
+
+.form-control {
+  border: 0;
+  border-radius: 0; }
 
 .people .media {
   display: flex;
@@ -15,12 +38,15 @@
   padding-bottom: 30px; }
 
 .people .media img {
-  padding-right: 20px; }
+  padding-right: 20px;
+  height: 70px; }
+
+.people .media .media-about {
+  width: 80%; }
 
 .media-body button {
   margin-right: 10px; }
 
-.pagination {
-  justify-content: center;
-  align-items: center;
-  display: flex; }
+.media-body h5 {
+  text-transform: uppercase;
+  color: #05539C; }

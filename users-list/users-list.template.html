@@ -1,0 +1,46 @@
+<div class="col-sm-9 col-md-10 main">
+    <div class="row">
+        <div class="col-sm-10 search-panel">
+            <div>
+                <form class="navbar-form">
+                    <h2>Users</h2>
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button type="button" class="btn btn-secondary pull-right add-button">Add user</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row people">
+        <div class="col-sm-10">
+            <div class="media" ng-repeat="item in vm.myData">
+                <img class="d-flex mr-3" ng-src="{{item.picture}}" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{item.name.first}} {{item.name.last}}</h5>
+                    <p class="media-about">{{item.about}}</p>
+                    <a>{{item.email}}</a>
+                    <button type="button" class="btn btn-secondary pull-right">Edit</button>
+                    <button type="button" class="btn btn-secondary pull-right">Del</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="row pagination">
+        <div class="col-sm-12">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
