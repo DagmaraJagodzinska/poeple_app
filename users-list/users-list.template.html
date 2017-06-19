@@ -4,7 +4,7 @@
             <div>
                 <form class="navbar-form">
                     <h2>Users</h2>
-                    <input type="text" class="form-control" placeholder="Search...">
+                    <input type="text" class="form-control" placeholder="Search..." ng-model="$ctrl.query">
                     <button type="button" class="btn btn-secondary pull-right add-button">Add user</button>
                 </form>
             </div>
@@ -12,7 +12,7 @@
     </div>
     <div class="row people">
         <div class="col-sm-10">
-            <div class="media" ng-repeat="item in vm.myData">
+            <div class="media" ng-repeat="item in vm.myData | filter:$ctrl.query " >
                 <img class="d-flex mr-3" ng-src="{{item.picture}}" alt="Generic placeholder image">
                 <div class="media-body">
                     <h5 class="mt-0">{{item.name.first}} {{item.name.last}}</h5>
