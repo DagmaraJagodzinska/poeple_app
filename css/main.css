@@ -9,12 +9,23 @@ h2 {
   font-size: 20px;
   letter-spacing: 0.1rem; }
 
-.add-button {
+.main-header {
+  color: #05539C;
+  padding-bottom: 20px; }
+
+.show-button {
+  background-color: #05539C;
+  border: none; }
+
+.show-button a {
+  color: #fff; }
+
+.add-button, .show-button {
   background-color: #069b9b;
   color: #fff;
   border-radius: 0; }
 
-.add-button:hover {
+.add-button:hover, .show-button:hover {
   color: #9af4f0; }
 
 .sidebar, .main {
@@ -50,3 +61,8 @@ h2 {
 .media-body h5 {
   text-transform: uppercase;
   color: #05539C; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; }

@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('usersList', []);
+angular.module('usersList', ['ui.bootstrap']);

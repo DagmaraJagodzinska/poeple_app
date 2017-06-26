@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />      
     <link rel="stylesheet" href="css/main.css" />
     <script src="node_modules/angular/angular.js"></script>  
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script> 
     <script src="users-list/users-list.module.js"></script> 
     <script src="users-list/users-list.component.js"></script>   
     <script src="node_modules/jquery/dist/jquery.min.js"></script>   
@@ -23,28 +24,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">People App</a>
+          <a class="navbar-brand" href="#home">People App</a>
         </div>
       </div>
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    <li class="active"><a href="#" ng-click="showme=true">Show Users<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Docs</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-7 col-md-10 sidebar" ng-hide="showme">
-                <h1 ng-hide="showme" class="text-center">Hi, do you want to see our users?</h1>
-                <button  class="center-block"><a href="#" ng-click="showme=true">Show Users<span class="sr-only">(current)</span></a></button>
+            <div class="col-sm-7 col-md-12 sidebar" ng-hide="showme">
+                <h1 ng-hide="showme" class="text-center main-header">Hi, do you want to see our users?</h1>
+                <button  class="center-block btn-lg show-button"><a href="#" ng-click="showme=true">Show Users<span class="sr-only">(current)</span></a></button>
             </div>
             <users-list ng-show="showme"></users-list>
         </div>      
     </div>
     <footer class="footer">
-        <div class="footer-container">
-        </div>
+        <div class="footer-container"></div>
     </footer>
 </body>
 </html>

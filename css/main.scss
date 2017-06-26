@@ -3,6 +3,7 @@ $white: #fff;
 $user-color: #05539C;
 $h2-color:  #069b9b;
 $add-button-bgcolor: #069b9b;
+$show-button-bgcolor: #05539C;
 
 // TYPOGRAPHY
 
@@ -17,6 +18,25 @@ h2 {
     color: $white;
     font-size: 20px;
     letter-spacing: 0.1rem;
+}
+
+.main-header{
+    color: #05539C;
+    padding-bottom: 20px;
+}
+
+.show-button {
+    @extend .add-button;
+    background-color: $show-button-bgcolor;
+    border: none;
+
+    a {
+        color: $white;
+
+        // &:hover {
+
+        // }
+    }
 }
 
 .add-button {
@@ -76,5 +96,11 @@ h2 {
         text-transform: uppercase;
         color: $user-color;
     }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
