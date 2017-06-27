@@ -1,0 +1,27 @@
+    <div class="row edit-people"> 
+        <div class="col-cm-10">
+            <form class="myForm">
+                <div class="row">
+                    <div class="form-photo-section col-sm-5">
+                        <img class="d-flex mr-3 big-photo" ng-src="{{item.picture}}" alt="Generic placeholder image">
+                        <button>Change photo</button>
+                    </div> 
+                    <div class="col-sm-5 edit-info">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name">
+                            <label for="surname">Surname:</label>
+                            <input type="text" name="surname">
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email"> 
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-sm-10 form-description">
+                        <label for="description">Description:</label>  
+                        <textarea name="description"rows="10" cols="50"></textarea>             
+                        <button type="submit" value="Submit">save</button>
+                    </div>
+                </div>                
+            </form>  
+        </div>
+    </div> 
