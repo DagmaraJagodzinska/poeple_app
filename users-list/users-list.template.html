@@ -17,7 +17,7 @@
     </div>
     <div class="row people">
         <div class="col-sm-10">
-            <div class="media" ng-repeat="item in vm.myData | filter:$ctrl.query " >
+            <div class="media" ng-repeat="item in vm.displayItems | filter:$ctrl.query " >
                 <img class="d-flex mr-3" ng-src="{{item.picture}}" alt="Generic placeholder image">
                 <div class="media-body">
                     <h5 class="mt-0">{{item.name.first}} {{item.name.last}}</h5>
@@ -33,7 +33,7 @@
 <div class="col-md-12">
     <div class="row pagination">
         <div class="col-sm-12">
-            <ul uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.currentPage" max-size="vm.maxSize"  boundary-links="true" force-ellipses="true" ng-change="vm.pageChanged()"></ul>
+            <ul uib-pagination class="pagination-sm" items-per-page="vm.itemsPerPage" total-items="vm.totalItems" ng-model="vm.currentPage" max-size="vm.maxSize"  boundary-links="true" force-ellipses="true" ng-change="vm.pageChanged()"></ul>
         </div>
     </div>
 </div>

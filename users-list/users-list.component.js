@@ -8,21 +8,6 @@
         controllerAs: "vm",
         controller: function ($http, $log){
         var vm = this;
-
-        vm.totalItems = 17;
-        vm.currentPage = 1;
-
-        vm.setPage = function (pageNo) {
-            vm.currentPage = pageNo;
-        };
-
-        vm.pageChanged = function() {
-            $log.log('Page changed to: ' + vm.currentPage);
-        };
-
-        vm.maxSize = 5;
-        vm.bigTotalItems = 175;
-        vm.bigCurrentPage = 1;
             
         $http({
             method: 'GET',
@@ -30,6 +15,18 @@
 
         }).then(function successCallback(data) {
             vm.myData = data.data;
+            
+            vm.totalItems = vm.myData.length;
+            vm.maxSize = 6;
+            vm.currentPage = 1;
+            vm.displayItems = vm.myData.slice(0,5);
+            vm.itemsPerPage = 5;
+
+            vm.pageChanged = function() {
+                var startPos = (vm.currentPage - 1) * 5;
+                vm.displayItems = vm.myData.slice(startPos, startPos + 5);
+            };
+  
         }, function errorCallback(response) {
             console.log('We don\'t have a data');
         });
