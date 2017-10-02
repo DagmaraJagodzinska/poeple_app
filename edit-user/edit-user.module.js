@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('editUser', ['usersList']);
+angular.module('editUser', []);

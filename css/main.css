@@ -16,9 +16,8 @@ h2 {
 .show-button {
   background-color: #05539C;
   border: none; }
-
-.show-button a {
-  color: #fff; }
+  .show-button a {
+    color: #fff; }
 
 .add-button, .show-button {
   background-color: #069b9b;
@@ -44,19 +43,22 @@ h2 {
 
 .people .media {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
   border-bottom: 1px solid grey;
-  padding-bottom: 30px; }
-
-.people .media img {
-  padding-right: 20px;
-  height: 70px; }
-
-.people .media .media-about {
-  width: 80%; }
-
-.media-body button {
-  margin-right: 10px; }
+  padding-bottom: 30px;
+  flex-direction: row; }
+  .people .media img {
+    padding-right: 20px;
+    height: 70px; }
+  .people .media .media-about {
+    width: 80%; }
+  .people .media .button-container {
+    display: flex;
+    align-items: flex-end; }
+    .people .media .button-container button {
+      align-items: flex-end;
+      margin-left: 10px; }
 
 .media-body h5 {
   text-transform: uppercase;
@@ -76,9 +78,8 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 30px; }
-
-.form-description label {
-  align-self: baseline; }
+  .form-description label {
+    align-self: baseline; }
 
 .form-photo-section {
   display: flex;
@@ -89,7 +90,6 @@ h2 {
 .edit-info {
   display: flex;
   flex-direction: column; }
-
-.edit-info label {
-  margin-bottom: 5px;
-  margin-top: 13px; }
+  .edit-info label {
+    margin-bottom: 5px;
+    margin-top: 13px; }

@@ -15,17 +15,21 @@
             </div>
         </div>
     </div>
-    <div class="row people">
+    <div class="row people">         
         <div class="col-sm-10">
             <div class="media" ng-repeat="item in vm.displayItems | filter:$ctrl.query " >
-                <img class="d-flex mr-3" ng-src="{{item.picture}}" alt="Generic placeholder image">
-                <div class="media-body">
+                <img class="d-flex mr-3" ng-src="{{item.picture}}" alt="Generic placeholder image" ng-hide="showEdit">
+                <div class="media-body" ng-hide="showEdit">
                     <h5 class="mt-0">{{item.name.first}} {{item.name.last}}</h5>
                     <p class="media-about">{{item.about}}</p>
                     <a>{{item.email}}</a>
-                    <button type="button" class="btn btn-secondary pull-right">Edit</button>
-                    <button type="button" class="btn btn-secondary pull-right">Del</button>
+                </div> 
+                <div class="button-container" ng-hide="showEdit">
+                    <button type="button" class="btn btn-secondary pull-right">Buy</button>
+                    <button type="button" class="btn btn-secondary pull-right"><a href="#" ng-click="showEdit=true">Edit<span class="sr-only">(current)</span></a></button>
+                    <button type="button" class="btn btn-secondary pull-right">Del</button> 
                 </div>
+                <edit-user ng-show="showEdit"></edit-user>            
             </div>
         </div>
     </div>   

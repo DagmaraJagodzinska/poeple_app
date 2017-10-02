@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('usersList',['ui.bootstrap'])
+    .module('usersList',['ui.bootstrap', 'editUser'])
     .component('usersList', {
         templateUrl:'users-list/users-list.template.html',
         controllerAs: "vm",
